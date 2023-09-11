@@ -30,8 +30,10 @@ use frame_support::PalletError;
 use scale_info::TypeInfo;
 use serde::{Deserialize, Serialize};
 use sp_consensus_grandpa::{AuthorityList, ConsensusLog, SetId, GRANDPA_ENGINE_ID};
-use sp_runtime::{traits::Header as HeaderT, Digest, RuntimeDebug};
+use sp_runtime::{traits::Header as HeasderT, Digest, RuntimeDebug};
 use sp_std::boxed::Box;
+use sp_runtime::traits::Header as HeaderT;
+use   sp_std::vec;
 
 pub mod justification;
 pub mod storage_keys;

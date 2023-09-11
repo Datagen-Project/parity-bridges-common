@@ -915,7 +915,25 @@ name = "bp-beefy"
 version = "0.1.0"
 dependencies = [
  "binary-merkle-tree",
- "bp-runtime",
+ "bp-runtime 0.1.0",
+ "frame-support",
+ "pallet-beefy-mmr",
+ "pallet-mmr",
+ "parity-scale-codec",
+ "scale-info",
+ "serde",
+ "sp-consensus-beefy",
+ "sp-runtime",
+ "sp-std 8.0.0 (git+https://github.com/paritytech/substrate?branch=polkadot-v1.0.0)",
+]
+
+[[package]]
+name = "bp-beefy"
+version = "0.1.0"
+source = "git+https://github.com/Datagen-Project/parity-bridges-common?branch=release-v1.0.0#108bd0cd1a2902d396068ca3c3407e110bc39a3b"
+dependencies = [
+ "binary-merkle-tree",
+ "bp-runtime 0.1.0 (git+https://github.com/Datagen-Project/parity-bridges-common?branch=release-v1.0.0)",
  "frame-support",
  "pallet-beefy-mmr",
  "pallet-mmr",
@@ -931,9 +949,24 @@ dependencies = [
 name = "bp-bridge-hub-cumulus"
 version = "0.1.0"
 dependencies = [
- "bp-messages",
- "bp-polkadot-core",
- "bp-runtime",
+ "bp-messages 0.1.0",
+ "bp-polkadot-core 0.1.0",
+ "bp-runtime 0.1.0",
+ "frame-support",
+ "frame-system",
+ "polkadot-primitives",
+ "sp-api",
+ "sp-std 8.0.0 (git+https://github.com/paritytech/substrate?branch=polkadot-v1.0.0)",
+]
+
+[[package]]
+name = "bp-bridge-hub-cumulus"
+version = "0.1.0"
+source = "git+https://github.com/Datagen-Project/parity-bridges-common?branch=release-v1.0.0#108bd0cd1a2902d396068ca3c3407e110bc39a3b"
+dependencies = [
+ "bp-messages 0.1.0 (git+https://github.com/Datagen-Project/parity-bridges-common?branch=release-v1.0.0)",
+ "bp-polkadot-core 0.1.0 (git+https://github.com/Datagen-Project/parity-bridges-common?branch=release-v1.0.0)",
+ "bp-runtime 0.1.0 (git+https://github.com/Datagen-Project/parity-bridges-common?branch=release-v1.0.0)",
  "frame-support",
  "frame-system",
  "polkadot-primitives",
@@ -945,9 +978,9 @@ dependencies = [
 name = "bp-bridge-hub-kusama"
 version = "0.1.0"
 dependencies = [
- "bp-bridge-hub-cumulus",
- "bp-messages",
- "bp-runtime",
+ "bp-bridge-hub-cumulus 0.1.0",
+ "bp-messages 0.1.0",
+ "bp-runtime 0.1.0",
  "frame-support",
  "sp-api",
  "sp-std 8.0.0 (git+https://github.com/paritytech/substrate?branch=polkadot-v1.0.0)",
@@ -957,9 +990,9 @@ dependencies = [
 name = "bp-bridge-hub-polkadot"
 version = "0.1.0"
 dependencies = [
- "bp-bridge-hub-cumulus",
- "bp-messages",
- "bp-runtime",
+ "bp-bridge-hub-cumulus 0.1.0",
+ "bp-messages 0.1.0",
+ "bp-runtime 0.1.0",
  "frame-support",
  "sp-api",
  "sp-std 8.0.0 (git+https://github.com/paritytech/substrate?branch=polkadot-v1.0.0)",
@@ -969,9 +1002,9 @@ dependencies = [
 name = "bp-bridge-hub-rococo"
 version = "0.1.0"
 dependencies = [
- "bp-bridge-hub-cumulus",
- "bp-messages",
- "bp-runtime",
+ "bp-bridge-hub-cumulus 0.1.0",
+ "bp-messages 0.1.0",
+ "bp-runtime 0.1.0",
  "frame-support",
  "sp-api",
  "sp-std 8.0.0 (git+https://github.com/paritytech/substrate?branch=polkadot-v1.0.0)",
@@ -981,9 +1014,9 @@ dependencies = [
 name = "bp-bridge-hub-wococo"
 version = "0.1.0"
 dependencies = [
- "bp-bridge-hub-cumulus",
- "bp-messages",
- "bp-runtime",
+ "bp-bridge-hub-cumulus 0.1.0",
+ "bp-messages 0.1.0",
+ "bp-runtime 0.1.0",
  "frame-support",
  "sp-api",
  "sp-std 8.0.0 (git+https://github.com/paritytech/substrate?branch=polkadot-v1.0.0)",
@@ -993,10 +1026,36 @@ dependencies = [
 name = "bp-datagen"
 version = "0.1.0"
 dependencies = [
- "bp-beefy",
- "bp-header-chain",
- "bp-messages",
- "bp-runtime",
+ "bp-beefy 0.1.0",
+ "bp-header-chain 0.1.0",
+ "bp-messages 0.1.0",
+ "bp-runtime 0.1.0",
+ "fixed-hash",
+ "frame-support",
+ "frame-system",
+ "hash256-std-hasher",
+ "impl-codec",
+ "impl-serde",
+ "parity-util-mem",
+ "scale-info",
+ "serde",
+ "sp-api",
+ "sp-core",
+ "sp-io",
+ "sp-runtime",
+ "sp-std 8.0.0 (git+https://github.com/paritytech/substrate?branch=polkadot-v1.0.0)",
+ "sp-trie",
+]
+
+[[package]]
+name = "bp-datagen"
+version = "0.1.0"
+source = "git+https://github.com/Datagen-Project/parity-bridges-common?branch=release-v1.0.0#108bd0cd1a2902d396068ca3c3407e110bc39a3b"
+dependencies = [
+ "bp-beefy 0.1.0 (git+https://github.com/Datagen-Project/parity-bridges-common?branch=release-v1.0.0)",
+ "bp-header-chain 0.1.0 (git+https://github.com/Datagen-Project/parity-bridges-common?branch=release-v1.0.0)",
+ "bp-messages 0.1.0 (git+https://github.com/Datagen-Project/parity-bridges-common?branch=release-v1.0.0)",
+ "bp-runtime 0.1.0 (git+https://github.com/Datagen-Project/parity-bridges-common?branch=release-v1.0.0)",
  "fixed-hash",
  "frame-support",
  "frame-system",
@@ -1018,10 +1077,27 @@ dependencies = [
 name = "bp-datagen-parachain"
 version = "0.1.0"
 dependencies = [
- "bp-bridge-hub-cumulus",
- "bp-messages",
- "bp-polkadot-core",
- "bp-runtime",
+ "bp-bridge-hub-cumulus 0.1.0",
+ "bp-messages 0.1.0",
+ "bp-polkadot-core 0.1.0",
+ "bp-runtime 0.1.0",
+ "frame-support",
+ "frame-system",
+ "sp-api",
+ "sp-core",
+ "sp-runtime",
+ "sp-std 8.0.0 (git+https://github.com/paritytech/substrate?branch=polkadot-v1.0.0)",
+]
+
+[[package]]
+name = "bp-datagen-parachain"
+version = "0.1.0"
+source = "git+https://github.com/Datagen-Project/parity-bridges-common?branch=release-v1.0.0#108bd0cd1a2902d396068ca3c3407e110bc39a3b"
+dependencies = [
+ "bp-bridge-hub-cumulus 0.1.0 (git+https://github.com/Datagen-Project/parity-bridges-common?branch=release-v1.0.0)",
+ "bp-messages 0.1.0 (git+https://github.com/Datagen-Project/parity-bridges-common?branch=release-v1.0.0)",
+ "bp-polkadot-core 0.1.0 (git+https://github.com/Datagen-Project/parity-bridges-common?branch=release-v1.0.0)",
+ "bp-runtime 0.1.0 (git+https://github.com/Datagen-Project/parity-bridges-common?branch=release-v1.0.0)",
  "frame-support",
  "frame-system",
  "sp-api",
@@ -1034,8 +1110,8 @@ dependencies = [
 name = "bp-header-chain"
 version = "0.1.0"
 dependencies = [
- "bp-runtime",
- "bp-test-utils",
+ "bp-runtime 0.1.0",
+ "bp-test-utils 0.1.0",
  "finality-grandpa",
  "frame-support",
  "hex",
@@ -1050,12 +1126,29 @@ dependencies = [
 ]
 
 [[package]]
+name = "bp-header-chain"
+version = "0.1.0"
+source = "git+https://github.com/Datagen-Project/parity-bridges-common?branch=release-v1.0.0#108bd0cd1a2902d396068ca3c3407e110bc39a3b"
+dependencies = [
+ "bp-runtime 0.1.0 (git+https://github.com/Datagen-Project/parity-bridges-common?branch=release-v1.0.0)",
+ "finality-grandpa",
+ "frame-support",
+ "parity-scale-codec",
+ "scale-info",
+ "serde",
+ "sp-consensus-grandpa",
+ "sp-core",
+ "sp-runtime",
+ "sp-std 8.0.0 (git+https://github.com/paritytech/substrate?branch=polkadot-v1.0.0)",
+]
+
+[[package]]
 name = "bp-kusama"
 version = "0.1.0"
 dependencies = [
- "bp-header-chain",
- "bp-polkadot-core",
- "bp-runtime",
+ "bp-header-chain 0.1.0",
+ "bp-polkadot-core 0.1.0",
+ "bp-runtime 0.1.0",
  "frame-support",
  "sp-api",
 ]
@@ -1064,8 +1157,8 @@ dependencies = [
 name = "bp-messages"
 version = "0.1.0"
 dependencies = [
- "bp-header-chain",
- "bp-runtime",
+ "bp-header-chain 0.1.0",
+ "bp-runtime 0.1.0",
  "frame-support",
  "hex",
  "hex-literal 0.4.1",
@@ -1078,13 +1171,29 @@ dependencies = [
 ]
 
 [[package]]
+name = "bp-messages"
+version = "0.1.0"
+source = "git+https://github.com/Datagen-Project/parity-bridges-common?branch=release-v1.0.0#108bd0cd1a2902d396068ca3c3407e110bc39a3b"
+dependencies = [
+ "bp-header-chain 0.1.0 (git+https://github.com/Datagen-Project/parity-bridges-common?branch=release-v1.0.0)",
+ "bp-runtime 0.1.0 (git+https://github.com/Datagen-Project/parity-bridges-common?branch=release-v1.0.0)",
+ "frame-support",
+ "parity-scale-codec",
+ "scale-info",
+ "serde",
+ "sp-core",
+ "sp-io",
+ "sp-std 8.0.0 (git+https://github.com/paritytech/substrate?branch=polkadot-v1.0.0)",
+]
+
+[[package]]
 name = "bp-millau"
 version = "0.1.0"
 dependencies = [
- "bp-beefy",
- "bp-header-chain",
- "bp-messages",
- "bp-runtime",
+ "bp-beefy 0.1.0",
+ "bp-header-chain 0.1.0",
+ "bp-messages 0.1.0",
+ "bp-runtime 0.1.0",
  "fixed-hash",
  "frame-support",
  "frame-system",
@@ -1106,9 +1215,26 @@ dependencies = [
 name = "bp-parachains"
 version = "0.1.0"
 dependencies = [
- "bp-header-chain",
- "bp-polkadot-core",
- "bp-runtime",
+ "bp-header-chain 0.1.0",
+ "bp-polkadot-core 0.1.0",
+ "bp-runtime 0.1.0",
+ "frame-support",
+ "impl-trait-for-tuples",
+ "parity-scale-codec",
+ "scale-info",
+ "sp-core",
+ "sp-runtime",
+ "sp-std 8.0.0 (git+https://github.com/paritytech/substrate?branch=polkadot-v1.0.0)",
+]
+
+[[package]]
+name = "bp-parachains"
+version = "0.1.0"
+source = "git+https://github.com/Datagen-Project/parity-bridges-common?branch=release-v1.0.0#108bd0cd1a2902d396068ca3c3407e110bc39a3b"
+dependencies = [
+ "bp-header-chain 0.1.0 (git+https://github.com/Datagen-Project/parity-bridges-common?branch=release-v1.0.0)",
+ "bp-polkadot-core 0.1.0 (git+https://github.com/Datagen-Project/parity-bridges-common?branch=release-v1.0.0)",
+ "bp-runtime 0.1.0 (git+https://github.com/Datagen-Project/parity-bridges-common?branch=release-v1.0.0)",
  "frame-support",
  "impl-trait-for-tuples",
  "parity-scale-codec",
@@ -1122,9 +1248,9 @@ dependencies = [
 name = "bp-polkadot"
 version = "0.1.0"
 dependencies = [
- "bp-header-chain",
- "bp-polkadot-core",
- "bp-runtime",
+ "bp-header-chain 0.1.0",
+ "bp-polkadot-core 0.1.0",
+ "bp-runtime 0.1.0",
  "frame-support",
  "sp-api",
 ]
@@ -1133,8 +1259,8 @@ dependencies = [
 name = "bp-polkadot-core"
 version = "0.1.0"
 dependencies = [
- "bp-messages",
- "bp-runtime",
+ "bp-messages 0.1.0",
+ "bp-runtime 0.1.0",
  "frame-support",
  "frame-system",
  "hex",
@@ -1148,11 +1274,29 @@ dependencies = [
 ]
 
 [[package]]
+name = "bp-polkadot-core"
+version = "0.1.0"
+source = "git+https://github.com/Datagen-Project/parity-bridges-common?branch=release-v1.0.0#108bd0cd1a2902d396068ca3c3407e110bc39a3b"
+dependencies = [
+ "bp-messages 0.1.0 (git+https://github.com/Datagen-Project/parity-bridges-common?branch=release-v1.0.0)",
+ "bp-runtime 0.1.0 (git+https://github.com/Datagen-Project/parity-bridges-common?branch=release-v1.0.0)",
+ "frame-support",
+ "frame-system",
+ "parity-scale-codec",
+ "parity-util-mem",
+ "scale-info",
+ "serde",
+ "sp-core",
+ "sp-runtime",
+ "sp-std 8.0.0 (git+https://github.com/paritytech/substrate?branch=polkadot-v1.0.0)",
+]
+
+[[package]]
 name = "bp-relayers"
 version = "0.1.0"
 dependencies = [
- "bp-messages",
- "bp-runtime",
+ "bp-messages 0.1.0",
+ "bp-runtime 0.1.0",
  "frame-support",
  "hex",
  "hex-literal 0.4.1",
@@ -1163,12 +1307,42 @@ dependencies = [
 ]
 
 [[package]]
+name = "bp-relayers"
+version = "0.1.0"
+source = "git+https://github.com/Datagen-Project/parity-bridges-common?branch=release-v1.0.0#108bd0cd1a2902d396068ca3c3407e110bc39a3b"
+dependencies = [
+ "bp-messages 0.1.0 (git+https://github.com/Datagen-Project/parity-bridges-common?branch=release-v1.0.0)",
+ "bp-runtime 0.1.0 (git+https://github.com/Datagen-Project/parity-bridges-common?branch=release-v1.0.0)",
+ "frame-support",
+ "parity-scale-codec",
+ "scale-info",
+ "sp-runtime",
+ "sp-std 8.0.0 (git+https://github.com/paritytech/substrate?branch=polkadot-v1.0.0)",
+]
+
+[[package]]
 name = "bp-rialto"
 version = "0.1.0"
 dependencies = [
- "bp-header-chain",
- "bp-messages",
- "bp-runtime",
+ "bp-header-chain 0.1.0",
+ "bp-messages 0.1.0",
+ "bp-runtime 0.1.0",
+ "frame-support",
+ "frame-system",
+ "sp-api",
+ "sp-core",
+ "sp-runtime",
+ "sp-std 8.0.0 (git+https://github.com/paritytech/substrate?branch=polkadot-v1.0.0)",
+]
+
+[[package]]
+name = "bp-rialto"
+version = "0.1.0"
+source = "git+https://github.com/Datagen-Project/parity-bridges-common?branch=release-v1.0.0#108bd0cd1a2902d396068ca3c3407e110bc39a3b"
+dependencies = [
+ "bp-header-chain 0.1.0 (git+https://github.com/Datagen-Project/parity-bridges-common?branch=release-v1.0.0)",
+ "bp-messages 0.1.0 (git+https://github.com/Datagen-Project/parity-bridges-common?branch=release-v1.0.0)",
+ "bp-runtime 0.1.0 (git+https://github.com/Datagen-Project/parity-bridges-common?branch=release-v1.0.0)",
  "frame-support",
  "frame-system",
  "sp-api",
@@ -1181,10 +1355,10 @@ dependencies = [
 name = "bp-rialto-parachain"
 version = "0.1.0"
 dependencies = [
- "bp-bridge-hub-cumulus",
- "bp-messages",
- "bp-polkadot-core",
- "bp-runtime",
+ "bp-bridge-hub-cumulus 0.1.0",
+ "bp-messages 0.1.0",
+ "bp-polkadot-core 0.1.0",
+ "bp-runtime 0.1.0",
  "frame-support",
  "frame-system",
  "sp-api",
@@ -1197,9 +1371,9 @@ dependencies = [
 name = "bp-rococo"
 version = "0.1.0"
 dependencies = [
- "bp-header-chain",
- "bp-polkadot-core",
- "bp-runtime",
+ "bp-header-chain 0.1.0",
+ "bp-polkadot-core 0.1.0",
+ "bp-runtime 0.1.0",
  "frame-support",
  "sp-api",
 ]
@@ -1227,13 +1401,55 @@ dependencies = [
 ]
 
 [[package]]
+name = "bp-runtime"
+version = "0.1.0"
+source = "git+https://github.com/Datagen-Project/parity-bridges-common?branch=release-v1.0.0#108bd0cd1a2902d396068ca3c3407e110bc39a3b"
+dependencies = [
+ "frame-support",
+ "frame-system",
+ "hash-db",
+ "impl-trait-for-tuples",
+ "num-traits",
+ "parity-scale-codec",
+ "scale-info",
+ "serde",
+ "sp-core",
+ "sp-io",
+ "sp-runtime",
+ "sp-state-machine",
+ "sp-std 8.0.0 (git+https://github.com/paritytech/substrate?branch=polkadot-v1.0.0)",
+ "sp-trie",
+ "trie-db",
+]
+
+[[package]]
 name = "bp-test-utils"
 version = "0.1.0"
 dependencies = [
- "bp-header-chain",
- "bp-parachains",
- "bp-polkadot-core",
- "bp-runtime",
+ "bp-header-chain 0.1.0",
+ "bp-parachains 0.1.0",
+ "bp-polkadot-core 0.1.0",
+ "bp-runtime 0.1.0",
+ "ed25519-dalek",
+ "finality-grandpa",
+ "parity-scale-codec",
+ "sp-application-crypto",
+ "sp-consensus-grandpa",
+ "sp-core",
+ "sp-runtime",
+ "sp-std 8.0.0 (git+https://github.com/paritytech/substrate?branch=polkadot-v1.0.0)",
+ "sp-trie",
+]
+
+[[package]]
+name = "bp-test-utils"
+version = "0.1.0"
+source = "git+https://github.com/Datagen-Project/parity-bridges-common?branch=release-v1.0.0#108bd0cd1a2902d396068ca3c3407e110bc39a3b"
+dependencies = [
+ "bp-header-chain 0.1.0 (git+https://github.com/Datagen-Project/parity-bridges-common?branch=release-v1.0.0)",
+ "bp-parachains 0.1.0 (git+https://github.com/Datagen-Project/parity-bridges-common?branch=release-v1.0.0)",
+ "bp-polkadot-core 0.1.0 (git+https://github.com/Datagen-Project/parity-bridges-common?branch=release-v1.0.0)",
+ "bp-runtime 0.1.0 (git+https://github.com/Datagen-Project/parity-bridges-common?branch=release-v1.0.0)",
  "ed25519-dalek",
  "finality-grandpa",
  "parity-scale-codec",
@@ -1249,9 +1465,21 @@ dependencies = [
 name = "bp-westend"
 version = "0.1.0"
 dependencies = [
- "bp-header-chain",
- "bp-polkadot-core",
- "bp-runtime",
+ "bp-header-chain 0.1.0",
+ "bp-polkadot-core 0.1.0",
+ "bp-runtime 0.1.0",
+ "frame-support",
+ "sp-api",
+]
+
+[[package]]
+name = "bp-westend"
+version = "0.1.0"
+source = "git+https://github.com/Datagen-Project/parity-bridges-common?branch=release-v1.0.0#108bd0cd1a2902d396068ca3c3407e110bc39a3b"
+dependencies = [
+ "bp-header-chain 0.1.0 (git+https://github.com/Datagen-Project/parity-bridges-common?branch=release-v1.0.0)",
+ "bp-polkadot-core 0.1.0 (git+https://github.com/Datagen-Project/parity-bridges-common?branch=release-v1.0.0)",
+ "bp-runtime 0.1.0 (git+https://github.com/Datagen-Project/parity-bridges-common?branch=release-v1.0.0)",
  "frame-support",
  "sp-api",
 ]
@@ -1260,10 +1488,10 @@ dependencies = [
 name = "bp-wococo"
 version = "0.1.0"
 dependencies = [
- "bp-header-chain",
- "bp-polkadot-core",
+ "bp-header-chain 0.1.0",
+ "bp-polkadot-core 0.1.0",
  "bp-rococo",
- "bp-runtime",
+ "bp-runtime 0.1.0",
  "frame-support",
  "sp-api",
 ]
@@ -1272,8 +1500,8 @@ dependencies = [
 name = "bp-xcm-bridge-hub"
 version = "0.1.0"
 dependencies = [
- "bp-messages",
- "bp-runtime",
+ "bp-messages 0.1.0",
+ "bp-runtime 0.1.0",
  "frame-support",
  "parity-scale-codec",
  "scale-info",
@@ -1286,25 +1514,30 @@ name = "bp-xcm-bridge-hub-router"
 version = "0.1.0"
 
 [[package]]
+name = "bp-xcm-bridge-hub-router"
+version = "0.1.0"
+source = "git+https://github.com/Datagen-Project/parity-bridges-common?branch=release-v1.0.0#108bd0cd1a2902d396068ca3c3407e110bc39a3b"
+
+[[package]]
 name = "bridge-runtime-common"
 version = "0.1.0"
 dependencies = [
- "bp-header-chain",
- "bp-messages",
- "bp-parachains",
- "bp-polkadot-core",
- "bp-relayers",
- "bp-runtime",
- "bp-test-utils",
+ "bp-header-chain 0.1.0",
+ "bp-messages 0.1.0",
+ "bp-parachains 0.1.0",
+ "bp-polkadot-core 0.1.0",
+ "bp-relayers 0.1.0",
+ "bp-runtime 0.1.0",
+ "bp-test-utils 0.1.0",
  "frame-support",
  "frame-system",
  "hash-db",
  "log",
  "pallet-balances",
- "pallet-bridge-grandpa",
- "pallet-bridge-messages",
- "pallet-bridge-parachains",
- "pallet-bridge-relayers",
+ "pallet-bridge-grandpa 0.1.0",
+ "pallet-bridge-messages 0.1.0",
+ "pallet-bridge-parachains 0.1.0",
+ "pallet-bridge-relayers 0.1.0",
  "pallet-transaction-payment",
  "pallet-utility",
  "parity-scale-codec",
@@ -1316,6 +1549,41 @@ dependencies = [
  "sp-std 8.0.0 (git+https://github.com/paritytech/substrate?branch=polkadot-v1.0.0)",
  "sp-trie",
  "static_assertions",
+ "xcm",
+ "xcm-builder",
+]
+
+[[package]]
+name = "bridge-runtime-common"
+version = "0.1.0"
+source = "git+https://github.com/Datagen-Project/parity-bridges-common?branch=release-v1.0.0#108bd0cd1a2902d396068ca3c3407e110bc39a3b"
+dependencies = [
+ "bp-datagen 0.1.0 (git+https://github.com/Datagen-Project/parity-bridges-common?branch=release-v1.0.0)",
+ "bp-datagen-parachain 0.1.0 (git+https://github.com/Datagen-Project/parity-bridges-common?branch=release-v1.0.0)",
+ "bp-header-chain 0.1.0 (git+https://github.com/Datagen-Project/parity-bridges-common?branch=release-v1.0.0)",
+ "bp-messages 0.1.0 (git+https://github.com/Datagen-Project/parity-bridges-common?branch=release-v1.0.0)",
+ "bp-parachains 0.1.0 (git+https://github.com/Datagen-Project/parity-bridges-common?branch=release-v1.0.0)",
+ "bp-polkadot-core 0.1.0 (git+https://github.com/Datagen-Project/parity-bridges-common?branch=release-v1.0.0)",
+ "bp-relayers 0.1.0 (git+https://github.com/Datagen-Project/parity-bridges-common?branch=release-v1.0.0)",
+ "bp-runtime 0.1.0 (git+https://github.com/Datagen-Project/parity-bridges-common?branch=release-v1.0.0)",
+ "frame-support",
+ "frame-system",
+ "hash-db",
+ "log",
+ "pallet-bridge-grandpa 0.1.0 (git+https://github.com/Datagen-Project/parity-bridges-common?branch=release-v1.0.0)",
+ "pallet-bridge-messages 0.1.0 (git+https://github.com/Datagen-Project/parity-bridges-common?branch=release-v1.0.0)",
+ "pallet-bridge-parachains 0.1.0 (git+https://github.com/Datagen-Project/parity-bridges-common?branch=release-v1.0.0)",
+ "pallet-bridge-relayers 0.1.0 (git+https://github.com/Datagen-Project/parity-bridges-common?branch=release-v1.0.0)",
+ "pallet-transaction-payment",
+ "pallet-utility",
+ "parity-scale-codec",
+ "scale-info",
+ "sp-api",
+ "sp-core",
+ "sp-io",
+ "sp-runtime",
+ "sp-std 8.0.0 (git+https://github.com/paritytech/substrate?branch=polkadot-v1.0.0)",
+ "sp-trie",
  "xcm",
  "xcm-builder",
 ]
@@ -2818,6 +3086,74 @@ dependencies = [
 ]
 
 [[package]]
+name = "datagen-runtime"
+version = "4.0.0-dev"
+source = "git+https://github.com/ysfkel/Datagen-Substrate-Grant.git?branch=main#5d9e6c23eef57344930207bcfaacd1a1bff46d4c"
+dependencies = [
+ "bp-datagen 0.1.0 (git+https://github.com/Datagen-Project/parity-bridges-common?branch=release-v1.0.0)",
+ "bp-datagen-parachain 0.1.0 (git+https://github.com/Datagen-Project/parity-bridges-common?branch=release-v1.0.0)",
+ "bp-header-chain 0.1.0 (git+https://github.com/Datagen-Project/parity-bridges-common?branch=release-v1.0.0)",
+ "bp-messages 0.1.0 (git+https://github.com/Datagen-Project/parity-bridges-common?branch=release-v1.0.0)",
+ "bp-parachains 0.1.0 (git+https://github.com/Datagen-Project/parity-bridges-common?branch=release-v1.0.0)",
+ "bp-polkadot-core 0.1.0 (git+https://github.com/Datagen-Project/parity-bridges-common?branch=release-v1.0.0)",
+ "bp-relayers 0.1.0 (git+https://github.com/Datagen-Project/parity-bridges-common?branch=release-v1.0.0)",
+ "bp-rialto 0.1.0 (git+https://github.com/Datagen-Project/parity-bridges-common?branch=release-v1.0.0)",
+ "bp-runtime 0.1.0 (git+https://github.com/Datagen-Project/parity-bridges-common?branch=release-v1.0.0)",
+ "bp-westend 0.1.0 (git+https://github.com/Datagen-Project/parity-bridges-common?branch=release-v1.0.0)",
+ "bp-xcm-bridge-hub-router 0.1.0 (git+https://github.com/Datagen-Project/parity-bridges-common?branch=release-v1.0.0)",
+ "bridge-runtime-common 0.1.0 (git+https://github.com/Datagen-Project/parity-bridges-common?branch=release-v1.0.0)",
+ "frame-benchmarking",
+ "frame-executive",
+ "frame-support",
+ "frame-system",
+ "frame-system-benchmarking",
+ "frame-system-rpc-runtime-api",
+ "frame-try-runtime",
+ "pallet-aura",
+ "pallet-authorship",
+ "pallet-balances",
+ "pallet-beefy",
+ "pallet-beefy-mmr",
+ "pallet-bridge-grandpa 0.1.0 (git+https://github.com/Datagen-Project/parity-bridges-common?branch=release-v1.0.0)",
+ "pallet-bridge-messages 0.1.0 (git+https://github.com/Datagen-Project/parity-bridges-common?branch=release-v1.0.0)",
+ "pallet-bridge-parachains 0.1.0 (git+https://github.com/Datagen-Project/parity-bridges-common?branch=release-v1.0.0)",
+ "pallet-bridge-relayers 0.1.0 (git+https://github.com/Datagen-Project/parity-bridges-common?branch=release-v1.0.0)",
+ "pallet-check-node-computational-work",
+ "pallet-computational-work",
+ "pallet-grandpa",
+ "pallet-insecure-randomness-collective-flip",
+ "pallet-mmr",
+ "pallet-node-authorization",
+ "pallet-session",
+ "pallet-shift-session-manager 0.1.0 (git+https://github.com/Datagen-Project/parity-bridges-common?branch=release-v1.0.0)",
+ "pallet-sudo",
+ "pallet-timestamp",
+ "pallet-transaction-payment",
+ "pallet-transaction-payment-rpc-runtime-api",
+ "pallet-xcm",
+ "pallet-xcm-bridge-hub-router 0.1.0 (git+https://github.com/Datagen-Project/parity-bridges-common?branch=release-v1.0.0)",
+ "parity-scale-codec",
+ "scale-info",
+ "sp-api",
+ "sp-block-builder",
+ "sp-consensus-aura",
+ "sp-consensus-beefy",
+ "sp-consensus-grandpa",
+ "sp-core",
+ "sp-inherents",
+ "sp-offchain",
+ "sp-runtime",
+ "sp-session",
+ "sp-std 8.0.0 (git+https://github.com/paritytech/substrate?branch=polkadot-v1.0.0)",
+ "sp-transaction-pool",
+ "sp-version",
+ "substrate-wasm-builder",
+ "xcm",
+ "xcm-builder",
+ "xcm-executor",
+]
+
+[[package]]
 name = "der"
 version = "0.6.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -2934,7 +3270,7 @@ dependencies = [
  "convert_case",
  "proc-macro2 1.0.66",
  "quote 1.0.32",
- "rustc_version",
+ "rustc_version 0.4.0",
  "syn 1.0.109",
 ]
 
@@ -3522,7 +3858,7 @@ dependencies = [
  "async-std",
  "async-trait",
  "backoff",
- "bp-header-chain",
+ "bp-header-chain 0.1.0",
  "futures",
  "log",
  "num-traits",
@@ -4368,7 +4704,7 @@ dependencies = [
  "arbitrary",
  "lazy_static",
  "memmap2",
- "rustc_version",
+ "rustc_version 0.4.0",
 ]
 
 [[package]]
@@ -6112,7 +6448,7 @@ version = "0.1.0"
 dependencies = [
  "async-std",
  "async-trait",
- "bp-messages",
+ "bp-messages 0.1.0",
  "env_logger",
  "finality-relay",
  "futures",
@@ -6139,8 +6475,8 @@ dependencies = [
 name = "millau-bridge-node"
 version = "0.1.0"
 dependencies = [
- "bp-messages",
- "bridge-runtime-common",
+ "bp-messages 0.1.0",
+ "bridge-runtime-common 0.1.0",
  "clap 4.3.19",
  "frame-benchmarking",
  "frame-benchmarking-cli",
@@ -6184,18 +6520,18 @@ dependencies = [
 name = "millau-runtime"
 version = "0.1.0"
 dependencies = [
- "bp-header-chain",
- "bp-messages",
+ "bp-header-chain 0.1.0",
+ "bp-messages 0.1.0",
  "bp-millau",
- "bp-parachains",
- "bp-polkadot-core",
- "bp-relayers",
- "bp-rialto",
+ "bp-parachains 0.1.0",
+ "bp-polkadot-core 0.1.0",
+ "bp-relayers 0.1.0",
+ "bp-rialto 0.1.0",
  "bp-rialto-parachain",
- "bp-runtime",
- "bp-westend",
- "bp-xcm-bridge-hub-router",
- "bridge-runtime-common",
+ "bp-runtime 0.1.0",
+ "bp-westend 0.1.0",
+ "bp-xcm-bridge-hub-router 0.1.0",
+ "bridge-runtime-common 0.1.0",
  "env_logger",
  "frame-benchmarking",
  "frame-executive",
@@ -6207,21 +6543,21 @@ dependencies = [
  "pallet-balances",
  "pallet-beefy",
  "pallet-beefy-mmr",
- "pallet-bridge-grandpa",
- "pallet-bridge-messages",
- "pallet-bridge-parachains",
- "pallet-bridge-relayers",
+ "pallet-bridge-grandpa 0.1.0",
+ "pallet-bridge-messages 0.1.0",
+ "pallet-bridge-parachains 0.1.0",
+ "pallet-bridge-relayers 0.1.0",
  "pallet-grandpa",
  "pallet-mmr",
  "pallet-session",
- "pallet-shift-session-manager",
+ "pallet-shift-session-manager 0.1.0",
  "pallet-sudo",
  "pallet-timestamp",
  "pallet-transaction-payment",
  "pallet-transaction-payment-rpc-runtime-api",
  "pallet-utility",
  "pallet-xcm",
- "pallet-xcm-bridge-hub-router",
+ "pallet-xcm-bridge-hub-router 0.1.0",
  "parity-scale-codec",
  "scale-info",
  "sp-api",
@@ -7002,9 +7338,9 @@ dependencies = [
 name = "pallet-bridge-beefy"
 version = "0.1.0"
 dependencies = [
- "bp-beefy",
- "bp-runtime",
- "bp-test-utils",
+ "bp-beefy 0.1.0",
+ "bp-runtime 0.1.0",
+ "bp-test-utils 0.1.0",
  "ckb-merkle-mountain-range 0.3.2",
  "frame-support",
  "frame-system",
@@ -7026,9 +7362,9 @@ dependencies = [
 name = "pallet-bridge-grandpa"
 version = "0.1.0"
 dependencies = [
- "bp-header-chain",
- "bp-runtime",
- "bp-test-utils",
+ "bp-header-chain 0.1.0",
+ "bp-runtime 0.1.0",
+ "bp-test-utils 0.1.0",
  "finality-grandpa",
  "frame-benchmarking",
  "frame-support",
@@ -7045,20 +7381,85 @@ dependencies = [
 ]
 
 [[package]]
+name = "pallet-bridge-grandpa"
+version = "0.1.0"
+source = "git+https://github.com/Datagen-Project/parity-bridges-common?branch=release-v1.0.0#108bd0cd1a2902d396068ca3c3407e110bc39a3b"
+dependencies = [
+ "bp-header-chain 0.1.0 (git+https://github.com/Datagen-Project/parity-bridges-common?branch=release-v1.0.0)",
+ "bp-runtime 0.1.0 (git+https://github.com/Datagen-Project/parity-bridges-common?branch=release-v1.0.0)",
+ "bp-test-utils 0.1.0 (git+https://github.com/Datagen-Project/parity-bridges-common?branch=release-v1.0.0)",
+ "finality-grandpa",
+ "frame-benchmarking",
+ "frame-support",
+ "frame-system",
+ "log",
+ "parity-scale-codec",
+ "scale-info",
+ "sp-consensus-grandpa",
+ "sp-runtime",
+ "sp-std 8.0.0 (git+https://github.com/paritytech/substrate?branch=polkadot-v1.0.0)",
+ "sp-trie",
+]
+
+[[package]]
 name = "pallet-bridge-messages"
 version = "0.1.0"
 dependencies = [
- "bp-header-chain",
- "bp-messages",
- "bp-runtime",
- "bp-test-utils",
+ "bp-header-chain 0.1.0",
+ "bp-messages 0.1.0",
+ "bp-runtime 0.1.0",
+ "bp-test-utils 0.1.0",
  "frame-benchmarking",
  "frame-support",
  "frame-system",
  "log",
  "num-traits",
  "pallet-balances",
- "pallet-bridge-grandpa",
+ "pallet-bridge-grandpa 0.1.0",
+ "parity-scale-codec",
+ "scale-info",
+ "sp-core",
+ "sp-io",
+ "sp-runtime",
+ "sp-std 8.0.0 (git+https://github.com/paritytech/substrate?branch=polkadot-v1.0.0)",
+ "sp-trie",
+]
+
+[[package]]
+name = "pallet-bridge-messages"
+version = "0.1.0"
+source = "git+https://github.com/Datagen-Project/parity-bridges-common?branch=release-v1.0.0#108bd0cd1a2902d396068ca3c3407e110bc39a3b"
+dependencies = [
+ "bp-header-chain 0.1.0 (git+https://github.com/Datagen-Project/parity-bridges-common?branch=release-v1.0.0)",
+ "bp-messages 0.1.0 (git+https://github.com/Datagen-Project/parity-bridges-common?branch=release-v1.0.0)",
+ "bp-runtime 0.1.0 (git+https://github.com/Datagen-Project/parity-bridges-common?branch=release-v1.0.0)",
+ "frame-benchmarking",
+ "frame-support",
+ "frame-system",
+ "log",
+ "num-traits",
+ "parity-scale-codec",
+ "scale-info",
+ "sp-core",
+ "sp-runtime",
+ "sp-std 8.0.0 (git+https://github.com/paritytech/substrate?branch=polkadot-v1.0.0)",
+ "sp-trie",
+]
+
+[[package]]
+name = "pallet-bridge-parachains"
+version = "0.1.0"
+dependencies = [
+ "bp-header-chain 0.1.0",
+ "bp-parachains 0.1.0",
+ "bp-polkadot-core 0.1.0",
+ "bp-runtime 0.1.0",
+ "bp-test-utils 0.1.0",
+ "frame-benchmarking",
+ "frame-support",
+ "frame-system",
+ "log",
+ "pallet-bridge-grandpa 0.1.0",
  "parity-scale-codec",
  "scale-info",
  "sp-core",
@@ -7071,21 +7472,19 @@ dependencies = [
 [[package]]
 name = "pallet-bridge-parachains"
 version = "0.1.0"
+source = "git+https://github.com/Datagen-Project/parity-bridges-common?branch=release-v1.0.0#108bd0cd1a2902d396068ca3c3407e110bc39a3b"
 dependencies = [
- "bp-header-chain",
- "bp-parachains",
- "bp-polkadot-core",
- "bp-runtime",
- "bp-test-utils",
+ "bp-header-chain 0.1.0 (git+https://github.com/Datagen-Project/parity-bridges-common?branch=release-v1.0.0)",
+ "bp-parachains 0.1.0 (git+https://github.com/Datagen-Project/parity-bridges-common?branch=release-v1.0.0)",
+ "bp-polkadot-core 0.1.0 (git+https://github.com/Datagen-Project/parity-bridges-common?branch=release-v1.0.0)",
+ "bp-runtime 0.1.0 (git+https://github.com/Datagen-Project/parity-bridges-common?branch=release-v1.0.0)",
  "frame-benchmarking",
  "frame-support",
  "frame-system",
  "log",
- "pallet-bridge-grandpa",
+ "pallet-bridge-grandpa 0.1.0 (git+https://github.com/Datagen-Project/parity-bridges-common?branch=release-v1.0.0)",
  "parity-scale-codec",
  "scale-info",
- "sp-core",
- "sp-io",
  "sp-runtime",
  "sp-std 8.0.0 (git+https://github.com/paritytech/substrate?branch=polkadot-v1.0.0)",
  "sp-trie",
@@ -7095,15 +7494,15 @@ dependencies = [
 name = "pallet-bridge-relayers"
 version = "0.1.0"
 dependencies = [
- "bp-messages",
- "bp-relayers",
- "bp-runtime",
+ "bp-messages 0.1.0",
+ "bp-relayers 0.1.0",
+ "bp-runtime 0.1.0",
  "frame-benchmarking",
  "frame-support",
  "frame-system",
  "log",
  "pallet-balances",
- "pallet-bridge-messages",
+ "pallet-bridge-messages 0.1.0",
  "parity-scale-codec",
  "scale-info",
  "sp-arithmetic",
@@ -7111,6 +7510,43 @@ dependencies = [
  "sp-io",
  "sp-runtime",
  "sp-std 8.0.0 (git+https://github.com/paritytech/substrate?branch=polkadot-v1.0.0)",
+]
+
+[[package]]
+name = "pallet-bridge-relayers"
+version = "0.1.0"
+source = "git+https://github.com/Datagen-Project/parity-bridges-common?branch=release-v1.0.0#108bd0cd1a2902d396068ca3c3407e110bc39a3b"
+dependencies = [
+ "bp-messages 0.1.0 (git+https://github.com/Datagen-Project/parity-bridges-common?branch=release-v1.0.0)",
+ "bp-relayers 0.1.0 (git+https://github.com/Datagen-Project/parity-bridges-common?branch=release-v1.0.0)",
+ "bp-runtime 0.1.0 (git+https://github.com/Datagen-Project/parity-bridges-common?branch=release-v1.0.0)",
+ "frame-benchmarking",
+ "frame-support",
+ "frame-system",
+ "log",
+ "pallet-bridge-messages 0.1.0 (git+https://github.com/Datagen-Project/parity-bridges-common?branch=release-v1.0.0)",
+ "parity-scale-codec",
+ "scale-info",
+ "sp-arithmetic",
+ "sp-runtime",
+ "sp-std 8.0.0 (git+https://github.com/paritytech/substrate?branch=polkadot-v1.0.0)",
+]
+
+[[package]]
+name = "pallet-check-node-computational-work"
+version = "0.1.0"
+source = "git+https://github.com/ysfkel/Datagen-Substrate-Grant.git?branch=main#5d9e6c23eef57344930207bcfaacd1a1bff46d4c"
+dependencies = [
+ "frame-support",
+ "frame-system",
+ "pallet-authorship",
+ "pallet-computational-work",
+ "pallet-insecure-randomness-collective-flip",
+ "pallet-session",
+ "parity-scale-codec",
+ "scale-info",
+ "sp-core",
+ "sp-runtime",
 ]
 
 [[package]]
@@ -7147,6 +7583,19 @@ dependencies = [
  "sp-io",
  "sp-runtime",
  "sp-std 8.0.0 (git+https://github.com/paritytech/substrate?branch=polkadot-v1.0.0)",
+]
+
+[[package]]
+name = "pallet-computational-work"
+version = "0.1.0"
+source = "git+https://github.com/ysfkel/Datagen-Substrate-Grant.git?branch=main#5d9e6c23eef57344930207bcfaacd1a1bff46d4c"
+dependencies = [
+ "frame-support",
+ "frame-system",
+ "parity-scale-codec",
+ "scale-info",
+ "sp-core",
+ "sp-runtime",
 ]
 
 [[package]]
@@ -7335,6 +7784,20 @@ dependencies = [
 ]
 
 [[package]]
+name = "pallet-insecure-randomness-collective-flip"
+version = "4.0.0-dev"
+source = "git+https://github.com/paritytech/substrate?branch=polkadot-v1.0.0#948fbd2fd1233dc26dbb9f9bbc1d2cca2c03945d"
+dependencies = [
+ "frame-support",
+ "frame-system",
+ "parity-scale-codec",
+ "safe-mix",
+ "scale-info",
+ "sp-runtime",
+ "sp-std 8.0.0 (git+https://github.com/paritytech/substrate?branch=polkadot-v1.0.0)",
+]
+
+[[package]]
 name = "pallet-membership"
 version = "4.0.0-dev"
 source = "git+https://github.com/paritytech/substrate?branch=polkadot-v1.0.0#948fbd2fd1233dc26dbb9f9bbc1d2cca2c03945d"
@@ -7415,6 +7878,22 @@ dependencies = [
  "scale-info",
  "sp-arithmetic",
  "sp-core",
+ "sp-runtime",
+ "sp-std 8.0.0 (git+https://github.com/paritytech/substrate?branch=polkadot-v1.0.0)",
+]
+
+[[package]]
+name = "pallet-node-authorization"
+version = "4.0.0-dev"
+source = "git+https://github.com/paritytech/substrate?branch=polkadot-v1.0.0#948fbd2fd1233dc26dbb9f9bbc1d2cca2c03945d"
+dependencies = [
+ "frame-support",
+ "frame-system",
+ "log",
+ "parity-scale-codec",
+ "scale-info",
+ "sp-core",
+ "sp-io",
  "sp-runtime",
  "sp-std 8.0.0 (git+https://github.com/paritytech/substrate?branch=polkadot-v1.0.0)",
 ]
@@ -7657,6 +8136,20 @@ dependencies = [
  "scale-info",
  "sp-core",
  "sp-runtime",
+ "sp-staking",
+ "sp-std 8.0.0 (git+https://github.com/paritytech/substrate?branch=polkadot-v1.0.0)",
+]
+
+[[package]]
+name = "pallet-shift-session-manager"
+version = "0.1.0"
+source = "git+https://github.com/Datagen-Project/parity-bridges-common?branch=release-v1.0.0#108bd0cd1a2902d396068ca3c3407e110bc39a3b"
+dependencies = [
+ "frame-support",
+ "frame-system",
+ "pallet-session",
+ "parity-scale-codec",
+ "scale-info",
  "sp-staking",
  "sp-std 8.0.0 (git+https://github.com/paritytech/substrate?branch=polkadot-v1.0.0)",
 ]
@@ -7952,14 +8445,14 @@ dependencies = [
 name = "pallet-xcm-bridge-hub"
 version = "0.1.0"
 dependencies = [
- "bp-messages",
- "bp-runtime",
+ "bp-messages 0.1.0",
+ "bp-runtime 0.1.0",
  "bp-xcm-bridge-hub",
  "frame-support",
  "frame-system",
  "log",
  "pallet-balances",
- "pallet-bridge-messages",
+ "pallet-bridge-messages 0.1.0",
  "parity-scale-codec",
  "polkadot-parachain",
  "scale-info",
@@ -7976,7 +8469,7 @@ dependencies = [
 name = "pallet-xcm-bridge-hub-router"
 version = "0.1.0"
 dependencies = [
- "bp-xcm-bridge-hub-router",
+ "bp-xcm-bridge-hub-router 0.1.0",
  "frame-benchmarking",
  "frame-support",
  "frame-system",
@@ -7985,6 +8478,24 @@ dependencies = [
  "scale-info",
  "sp-core",
  "sp-io",
+ "sp-runtime",
+ "sp-std 8.0.0 (git+https://github.com/paritytech/substrate?branch=polkadot-v1.0.0)",
+ "xcm",
+ "xcm-builder",
+]
+
+[[package]]
+name = "pallet-xcm-bridge-hub-router"
+version = "0.1.0"
+source = "git+https://github.com/Datagen-Project/parity-bridges-common?branch=release-v1.0.0#108bd0cd1a2902d396068ca3c3407e110bc39a3b"
+dependencies = [
+ "bp-xcm-bridge-hub-router 0.1.0 (git+https://github.com/Datagen-Project/parity-bridges-common?branch=release-v1.0.0)",
+ "frame-benchmarking",
+ "frame-support",
+ "frame-system",
+ "log",
+ "parity-scale-codec",
+ "scale-info",
  "sp-runtime",
  "sp-std 8.0.0 (git+https://github.com/paritytech/substrate?branch=polkadot-v1.0.0)",
  "xcm",
@@ -8011,7 +8522,7 @@ version = "0.1.0"
 dependencies = [
  "async-std",
  "async-trait",
- "bp-polkadot-core",
+ "bp-polkadot-core 0.1.0",
  "futures",
  "log",
  "parity-scale-codec",
@@ -10204,9 +10715,9 @@ version = "0.1.0"
 dependencies = [
  "bp-bridge-hub-kusama",
  "bp-bridge-hub-polkadot",
- "bp-header-chain",
- "bp-messages",
- "bp-parachains",
+ "bp-header-chain 0.1.0",
+ "bp-messages 0.1.0",
+ "bp-parachains 0.1.0",
  "bp-polkadot",
  "parity-scale-codec",
  "relay-substrate-client",
@@ -10221,12 +10732,12 @@ version = "0.1.0"
 dependencies = [
  "bp-bridge-hub-kusama",
  "bp-bridge-hub-polkadot",
- "bp-header-chain",
+ "bp-header-chain 0.1.0",
  "bp-kusama",
- "bp-messages",
- "bp-parachains",
- "bp-polkadot-core",
- "bp-runtime",
+ "bp-messages 0.1.0",
+ "bp-parachains 0.1.0",
+ "bp-polkadot-core 0.1.0",
+ "bp-runtime 0.1.0",
  "parity-scale-codec",
  "relay-substrate-client",
  "scale-info",
@@ -10241,12 +10752,12 @@ version = "0.1.0"
 dependencies = [
  "bp-bridge-hub-rococo",
  "bp-bridge-hub-wococo",
- "bp-header-chain",
- "bp-messages",
- "bp-parachains",
- "bp-polkadot-core",
+ "bp-header-chain 0.1.0",
+ "bp-messages 0.1.0",
+ "bp-parachains 0.1.0",
+ "bp-polkadot-core 0.1.0",
  "bp-wococo",
- "bridge-runtime-common",
+ "bridge-runtime-common 0.1.0",
  "parity-scale-codec",
  "relay-substrate-client",
  "scale-info",
@@ -10262,11 +10773,11 @@ version = "0.1.0"
 dependencies = [
  "bp-bridge-hub-rococo",
  "bp-bridge-hub-wococo",
- "bp-header-chain",
- "bp-parachains",
- "bp-polkadot-core",
+ "bp-header-chain 0.1.0",
+ "bp-parachains 0.1.0",
+ "bp-polkadot-core 0.1.0",
  "bp-rococo",
- "bridge-runtime-common",
+ "bridge-runtime-common 0.1.0",
  "parity-scale-codec",
  "relay-bridge-hub-rococo-client",
  "relay-substrate-client",
@@ -10276,6 +10787,22 @@ dependencies = [
  "sp-runtime",
  "sp-weights",
  "subxt",
+]
+
+[[package]]
+name = "relay-datagen-client"
+version = "0.1.0"
+dependencies = [
+ "bp-datagen 0.1.0 (git+https://github.com/Datagen-Project/parity-bridges-common?branch=release-v1.0.0)",
+ "datagen-runtime",
+ "frame-support",
+ "frame-system",
+ "pallet-transaction-payment",
+ "parity-scale-codec",
+ "relay-substrate-client",
+ "relay-utils",
+ "sp-core",
+ "sp-runtime",
 ]
 
 [[package]]
@@ -10318,7 +10845,7 @@ dependencies = [
 name = "relay-rialto-client"
 version = "0.1.0"
 dependencies = [
- "bp-rialto",
+ "bp-rialto 0.1.0",
  "frame-support",
  "frame-system",
  "pallet-transaction-payment",
@@ -10334,13 +10861,13 @@ dependencies = [
 name = "relay-rialto-parachain-client"
 version = "0.1.0"
 dependencies = [
- "bp-bridge-hub-cumulus",
- "bp-header-chain",
- "bp-messages",
+ "bp-bridge-hub-cumulus 0.1.0",
+ "bp-header-chain 0.1.0",
+ "bp-messages 0.1.0",
  "bp-millau",
- "bp-polkadot-core",
+ "bp-polkadot-core 0.1.0",
  "bp-rialto-parachain",
- "bridge-runtime-common",
+ "bridge-runtime-common 0.1.0",
  "parity-scale-codec",
  "relay-substrate-client",
  "scale-info",
@@ -10366,10 +10893,10 @@ version = "0.1.0"
 dependencies = [
  "async-std",
  "async-trait",
- "bp-header-chain",
- "bp-messages",
- "bp-polkadot-core",
- "bp-runtime",
+ "bp-header-chain 0.1.0",
+ "bp-messages 0.1.0",
+ "bp-polkadot-core 0.1.0",
+ "bp-runtime 0.1.0",
  "finality-relay",
  "frame-support",
  "frame-system",
@@ -10378,7 +10905,7 @@ dependencies = [
  "log",
  "num-traits",
  "pallet-balances",
- "pallet-bridge-messages",
+ "pallet-bridge-messages 0.1.0",
  "pallet-transaction-payment",
  "pallet-transaction-payment-rpc-runtime-api",
  "pallet-utility",
@@ -10411,7 +10938,7 @@ dependencies = [
  "async-std",
  "async-trait",
  "backoff",
- "bp-runtime",
+ "bp-runtime 0.1.0",
  "env_logger",
  "futures",
  "isahc",
@@ -10431,7 +10958,7 @@ dependencies = [
 name = "relay-westend-client"
 version = "0.1.0"
 dependencies = [
- "bp-westend",
+ "bp-westend 0.1.0",
  "relay-substrate-client",
  "relay-utils",
  "sp-core",
@@ -10482,8 +11009,8 @@ dependencies = [
 name = "rialto-bridge-node"
 version = "0.1.0"
 dependencies = [
- "bp-messages",
- "bridge-runtime-common",
+ "bp-messages 0.1.0",
+ "bridge-runtime-common 0.1.0",
  "clap 4.3.19",
  "frame-benchmarking",
  "frame-benchmarking-cli",
@@ -10511,8 +11038,8 @@ dependencies = [
 name = "rialto-parachain-collator"
 version = "0.1.0"
 dependencies = [
- "bp-messages",
- "bridge-runtime-common",
+ "bp-messages 0.1.0",
+ "bridge-runtime-common 0.1.0",
  "clap 4.3.19",
  "cumulus-client-cli",
  "cumulus-client-consensus-aura",
@@ -10566,13 +11093,13 @@ dependencies = [
 name = "rialto-parachain-runtime"
 version = "0.1.0"
 dependencies = [
- "bp-header-chain",
- "bp-messages",
+ "bp-header-chain 0.1.0",
+ "bp-messages 0.1.0",
  "bp-millau",
- "bp-relayers",
+ "bp-relayers 0.1.0",
  "bp-rialto-parachain",
- "bp-runtime",
- "bridge-runtime-common",
+ "bp-runtime 0.1.0",
+ "bridge-runtime-common 0.1.0",
  "cumulus-pallet-aura-ext",
  "cumulus-pallet-dmp-queue",
  "cumulus-pallet-parachain-system",
@@ -10589,9 +11116,9 @@ dependencies = [
  "hex-literal 0.4.1",
  "pallet-aura",
  "pallet-balances",
- "pallet-bridge-grandpa",
- "pallet-bridge-messages",
- "pallet-bridge-relayers",
+ "pallet-bridge-grandpa 0.1.0",
+ "pallet-bridge-messages 0.1.0",
+ "pallet-bridge-relayers 0.1.0",
  "pallet-sudo",
  "pallet-timestamp",
  "pallet-transaction-payment",
@@ -10624,13 +11151,13 @@ dependencies = [
 name = "rialto-runtime"
 version = "0.1.0"
 dependencies = [
- "bp-header-chain",
- "bp-messages",
+ "bp-header-chain 0.1.0",
+ "bp-messages 0.1.0",
  "bp-millau",
- "bp-relayers",
- "bp-rialto",
- "bp-runtime",
- "bridge-runtime-common",
+ "bp-relayers 0.1.0",
+ "bp-rialto 0.1.0",
+ "bp-runtime 0.1.0",
+ "bridge-runtime-common 0.1.0",
  "env_logger",
  "frame-benchmarking",
  "frame-executive",
@@ -10644,14 +11171,14 @@ dependencies = [
  "pallet-beefy",
  "pallet-beefy-mmr",
  "pallet-bridge-beefy",
- "pallet-bridge-grandpa",
- "pallet-bridge-messages",
- "pallet-bridge-relayers",
+ "pallet-bridge-grandpa 0.1.0",
+ "pallet-bridge-messages 0.1.0",
+ "pallet-bridge-relayers 0.1.0",
  "pallet-grandpa",
  "pallet-message-queue",
  "pallet-mmr",
  "pallet-session",
- "pallet-shift-session-manager",
+ "pallet-shift-session-manager 0.1.0",
  "pallet-sudo",
  "pallet-timestamp",
  "pallet-transaction-payment",
@@ -10900,6 +11427,15 @@ checksum = "3e75f6a532d0fd9f7f13144f392b6ad56a32696bfcd9c78f797f16bbb6f072d6"
 
 [[package]]
 name = "rustc_version"
+version = "0.2.3"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "138e3e0acb6c9fb258b19b67cb8abd63c00679d2851805ea151465464fe9030a"
+dependencies = [
+ "semver 0.9.0",
+]
+
+[[package]]
+name = "rustc_version"
 version = "0.4.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "bfa0f585226d2e68097d4f95d113b15b83a82e819ab25717ec0590d9584ef366"
@@ -11058,6 +11594,15 @@ name = "ryu"
 version = "1.0.15"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "1ad4cc8da4ef723ed60bced201181d83791ad433213d8c24efffda1eec85d741"
+
+[[package]]
+name = "safe-mix"
+version = "1.0.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "6d3d055a2582e6b00ed7a31c1524040aa391092bf636328350813f3a0605215c"
+dependencies = [
+ "rustc_version 0.2.3",
+]
 
 [[package]]
 name = "safe_arch"
@@ -12464,6 +13009,15 @@ dependencies = [
 
 [[package]]
 name = "semver"
+version = "0.9.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "1d7eb9ef2c18661902cc47e535f9bc51b78acd254da71d375c2f6720d9a40403"
+dependencies = [
+ "semver-parser",
+]
+
+[[package]]
+name = "semver"
 version = "1.0.18"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "b0293b4b29daaf487284529cc2f5675b8e57c61f70167ba415a463651fd6a918"
@@ -12842,7 +13396,7 @@ dependencies = [
  "curve25519-dalek 4.0.0-rc.1",
  "rand_core 0.6.4",
  "ring",
- "rustc_version",
+ "rustc_version 0.4.0",
  "sha2 0.10.7",
  "subtle",
 ]
@@ -13743,7 +14297,7 @@ dependencies = [
 name = "storage-proof-fuzzer"
 version = "0.1.0"
 dependencies = [
- "bp-runtime",
+ "bp-runtime 0.1.0",
  "env_logger",
  "honggfuzz",
  "log",
@@ -13909,16 +14463,16 @@ dependencies = [
  "anyhow",
  "async-std",
  "async-trait",
- "bp-header-chain",
- "bp-messages",
+ "bp-header-chain 0.1.0",
+ "bp-messages 0.1.0",
  "bp-millau",
- "bp-parachains",
- "bp-polkadot-core",
- "bp-rialto",
+ "bp-parachains 0.1.0",
+ "bp-polkadot-core 0.1.0",
+ "bp-rialto 0.1.0",
  "bp-rialto-parachain",
- "bp-runtime",
- "bp-test-utils",
- "bridge-runtime-common",
+ "bp-runtime 0.1.0",
+ "bp-test-utils 0.1.0",
+ "bridge-runtime-common 0.1.0",
  "finality-grandpa",
  "frame-support",
  "futures",
@@ -13928,8 +14482,8 @@ dependencies = [
  "millau-runtime",
  "num-format",
  "num-traits",
- "pallet-bridge-messages",
- "pallet-bridge-parachains",
+ "pallet-bridge-messages 0.1.0",
+ "pallet-bridge-parachains 0.1.0",
  "parachains-relay",
  "parity-scale-codec",
  "polkadot-parachain",
@@ -13974,17 +14528,17 @@ dependencies = [
  "anyhow",
  "async-std",
  "async-trait",
- "bp-header-chain",
- "bp-messages",
- "bp-parachains",
- "bp-polkadot-core",
- "bp-relayers",
- "bp-rialto",
+ "bp-header-chain 0.1.0",
+ "bp-messages 0.1.0",
+ "bp-parachains 0.1.0",
+ "bp-polkadot-core 0.1.0",
+ "bp-relayers 0.1.0",
+ "bp-rialto 0.1.0",
  "bp-rialto-parachain",
  "bp-rococo",
- "bp-runtime",
+ "bp-runtime 0.1.0",
  "bp-wococo",
- "bridge-runtime-common",
+ "bridge-runtime-common 0.1.0",
  "finality-grandpa",
  "finality-relay",
  "frame-support",
@@ -13995,9 +14549,9 @@ dependencies = [
  "messages-relay",
  "num-traits",
  "pallet-balances",
- "pallet-bridge-grandpa",
- "pallet-bridge-messages",
- "pallet-bridge-parachains",
+ "pallet-bridge-grandpa 0.1.0",
+ "pallet-bridge-messages 0.1.0",
+ "pallet-bridge-parachains 0.1.0",
  "pallet-transaction-payment",
  "parachains-relay",
  "parity-scale-codec",
