@@ -11,8 +11,9 @@ relay-substrate-client = { path = "../client-substrate" }
 relay-utils = { path = "../utils" }
 
 # Supported Chains
-bp-datagen = { git = "https://github.com/Datagen-Project/parity-bridges-common", default-features = false, branch = "release-v1.0.0" }
-datagen-runtime = { git = "https://github.com/ysfkel/Datagen-Substrate-Grant.git", default-features = false, branch = "main" }
+bp-datagen = { path = "../../primitives/chain-datagen" }
+datagen-runtime  = { path = "../../../Datagen-Substrate-Grant/fast_blockchain/runtime", default-features = false }
+# datagen-runtime = { git = "https://github.com/ysfkel/Datagen-Substrate-Grant.git", default-features = false, branch = "main" }
 
 # Substrate Dependencies
 

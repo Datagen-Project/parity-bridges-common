@@ -149,7 +149,7 @@ macro_rules! generate_bridge_reject_obsolete_headers_and_messages {
 /// A mapping over `NetworkId`.
 /// Since `NetworkId` doesn't include `Millau`, `Rialto` and `RialtoParachain`, we create some
 /// synthetic associations between these chains and `NetworkId` chains.
-pub enum CustomNetworkId {
+pub enum  {
 	/// The Millau network ID, associated with Kusama.
 	Millau,
 	/// The Rialto network ID, associated with Polkadot.
