@@ -32,7 +32,6 @@ pub mod rialto_messages;
 pub mod rialto_parachain_messages;
 pub mod weights;
 pub mod xcm_config;
-
 use bp_parachains::SingleParaStoredHeaderDataBuilder;
 #[cfg(feature = "runtime-benchmarks")]
 use bp_relayers::{RewardsAccountOwner, RewardsAccountParams};

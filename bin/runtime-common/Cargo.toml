@@ -17,6 +17,8 @@ static_assertions = { version = "1.1", optional = true }
 
 bp-header-chain = { path = "../../primitives/header-chain", default-features = false }
 bp-messages = { path = "../../primitives/messages", default-features = false }
+bp-datagen = { path = "../../primitives/chain-datagen", default-features = false }
+bp-datagen-parachain = { path = "../../primitives/chain-datagen-parachain", default-features = false }
 bp-parachains = { path = "../../primitives/parachains", default-features = false }
 bp-polkadot-core = { path = "../../primitives/polkadot-core", default-features = false }
 bp-relayers = { path = "../../primitives/relayers", default-features = false }
@@ -57,6 +59,7 @@ std = [
 	"bp-polkadot-core/std",
 	"bp-runtime/std",
 	"codec/std",
+	"bp-relayers/std",
 	"frame-support/std",
 	"frame-system/std",
 	"hash-db/std",
@@ -76,6 +79,8 @@ std = [
 	"sp-trie/std",
 	"xcm/std",
 	"xcm-builder/std",
+	"bp-datagen/std",
+	"bp-datagen-parachain/std",
 ]
 runtime-benchmarks = [
 	"pallet-bridge-grandpa/runtime-benchmarks",

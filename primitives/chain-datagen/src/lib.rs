@@ -14,7 +14,7 @@
 // You should have received a copy of the GNU General Public License
 // along with Parity Bridges Common.  If not, see <http://www.gnu.org/licenses/>.
 
-//! Primitives of the DataGen chain.
+//! Primitives of the Datagen chain.
 
 #![warn(missing_docs)]
 #![cfg_attr(not(feature = "std"), no_std)]
@@ -156,7 +156,6 @@ pub type Nonce = u32;
 
 /// Weight-to-Fee type used by DataGen.
 pub type WeightToFee = IdentityFee<Balance>;
-
 /// DataGen chain.
 #[derive(RuntimeDebug)]
 pub struct Datagen;
@@ -260,7 +259,7 @@ frame_support::parameter_types! {
 }
 
 /// Name of the With-DataGen GRANDPA pallet instance that is deployed at bridged chains.
-pub const WITH_DATAGEN_GRANDPA_PALLET_NAME: &str = "BridgeDataGenGrandpa";
+pub const WITH_DATAGEN_GRANDPA_PALLET_NAME: &str = "BridgeDatagenGrandpa";
 /// Name of the With-DataGen messages pallet instance that is deployed at bridged chains.
 pub const WITH_DATAGEN_MESSAGES_PALLET_NAME: &str = "BridgeDatagenMessages";
 /// Name of the transaction payment pallet at the DataGen runtime.
