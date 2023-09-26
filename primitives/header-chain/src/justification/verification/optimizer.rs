@@ -26,7 +26,7 @@ use finality_grandpa::voter_set::VoterSet;
 use sp_consensus_grandpa::{AuthorityId, SetId};
 use sp_runtime::traits::Header as HeaderT;
 use sp_std::{collections::btree_set::BTreeSet, prelude::*};
-
+use sp_std::vec;
 // Verification callbacks for justification optimization.
 struct JustificationOptimizer<Header: HeaderT> {
 	votes: BTreeSet<AuthorityId>,

@@ -31,7 +31,7 @@ use sp_std::{
 	collections::{btree_map::BTreeMap, btree_set::BTreeSet},
 	prelude::*,
 };
-
+use sp_std::vec;
 type SignedPrecommit<Header> = finality_grandpa::SignedPrecommit<
 	<Header as HeaderT>::Hash,
 	<Header as HeaderT>::Number,

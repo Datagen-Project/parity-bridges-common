@@ -108,7 +108,7 @@ pub type WeightToFee = IdentityFee<Balance>;
 pub struct DatagenParachain;
 
 impl Chain for DatagenParachain {
-	const ID: ChainId = *b"dtgp";
+	const ID: ChainId = *b"rlpa";
 
 	type BlockNumber = BlockNumber;
 	type Hash = Hash;

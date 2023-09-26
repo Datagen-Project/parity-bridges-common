@@ -59,6 +59,7 @@ std = [
 	"bp-polkadot-core/std",
 	"bp-runtime/std",
 	"codec/std",
+	"bp-relayers/std",
 	"frame-support/std",
 	"frame-system/std",
 	"hash-db/std",
